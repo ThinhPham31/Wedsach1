@@ -1,0 +1,72 @@
+/* Vùng slider */
+/* Định dạng cho vùng aside chứa slider */
+aside#slide {
+    width: 1100px; /* Chiều rộng của slider */
+    margin-left: 50px;
+    margin-right: 80px;
+}
+
+
+/* Định dạng cho khu vực điều khiển trong slider */
+.slide-pager {
+    position: relative;
+}
+
+/* Nút điều khiển trước */
+.slide-control-prev {
+    position: absolute;
+    text-align: center;
+    padding-top: 40px;
+    width: 25px;
+    height: 60px;
+    background: #F90; /* Màu nền cam */
+    color: #fff; /* Màu chữ trắng */
+    cursor: pointer;
+    top: 102px; /* Căn chỉnh từ đỉnh */
+    left: -34px; /* Nằm ở bên trái slider */
+    z-index: 1000; /* Đảm bảo nút luôn trên cùng */
+}
+
+/* Nút điều khiển tiếp theo */
+.slide-control-next {
+    position: absolute;
+    text-align: center;
+    padding-top: 40px;
+    width: 25px;
+    height: 60px;
+    background: #F90; /* Màu nền cam */
+    color: #fff; /* Màu chữ trắng */
+    cursor: pointer;
+    top: 102px; /* Căn chỉnh từ đỉnh */
+    right: -34px; /* Nằm ở bên phải slider */
+    z-index: 1000; /* Đảm bảo nút luôn trên cùng */
+}
+
+/* Container chứa toàn bộ hình ảnh trong slider */
+    .slide-container {
+        height: 255px;
+    width: 1100px;
+    overflow: hidden; /* Ẩn phần nội dung tràn */
+    position: relative;
+}
+
+/* Vùng chứa các hình ảnh */
+.slide-stage {
+    position: absolute;
+    display: flex; /* Sử dụng flex để hiển thị các hình ảnh ngang */
+    transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển slide mượt */
+}
+
+/* Định dạng cho từng hình ảnh */
+.slide-image {
+    float: left;
+    width: 200px; /* Image width */
+    margin: 0 10px; /* Margin between images */
+    text-align: center;
+}
+
+.slide-image img {
+    width: 100%; /* To make the image take the full width of its container */
+    height: auto;
+}
+    

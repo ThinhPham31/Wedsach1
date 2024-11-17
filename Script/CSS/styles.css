@@ -1,0 +1,566 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e3e3;
+}
+
+/* Header */
+header {
+    background-color: #f4a261;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+#logo {
+    padding: 5px 0px;
+}
+#logo img {
+    height: 230px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 50%;
+}
+.search-bar img {
+    height: 30px;
+}
+input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.search-bar button {
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    gap: 15px;
+}
+.icons div {
+    text-align: center;
+    font-size: 14px;
+}
+.icons a {
+    color: black;
+}
+.icons a:hover {
+    color: red;
+}
+.icons img {
+    height: 30px;
+}
+
+/***********Nav**************/
+/*Ngăn không cho thẻ nav trôi lên phần trống của thẻ header bằng thuộc tính clear, thiết lập màu nền và chiều cao cho thẻ nav*/
+nav{
+    clear: both;
+    background-color: #fff;
+    height: 40px;
+}
+.container {
+    float: left;
+}
+/* Menu đa cấp */
+#menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    position: relative;
+}
+#menu li a {
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+#menu ul.sub-menu {
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    width: 200px;
+    display: none;
+    margin-left: 20px;
+    padding: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+#menu li:hover>ul.sub-menu {
+    display: block;
+}
+#menu ul.sub-menu a{
+    padding: 8px 5px;
+    left: 0;
+}
+#menu ul.sub-menu li:hover>a {
+    border-bottom: 1px solid #474644;
+}
+#menu ul.sub-menu li:last-child a {
+    border: none;
+}
+#menu ul.sub-menu ul.sub-menu {
+    margin-left: 1px;
+    left: 199px;
+    top: -0.5px;
+}
+#menu li ul li a:hover {
+    background-color: #f4a261;
+}
+
+/*****************map***************/
+.map {
+    float: right;
+}
+.map div {
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    padding-right: 20px;
+}
+.map a {
+    padding: 15px 15px 10px 0px;
+    color: black;
+}
+.map a:hover{
+    color: red;
+}
+.map img {
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+.map img:hover {
+    color: red;
+}
+
+/***************body**********/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e3e3;
+}
+
+/* Header */
+header {
+    background-color: #f4a261;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+#logo {
+    border: none;
+}
+#logo img {
+    height: 190px;
+    margin: 10px 40px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 50%;
+}
+.search-bar img {
+    height: 30px;
+}
+input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.search-bar button {
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    gap: 15px;
+}
+.icons div {
+    text-align: center;
+    font-size: 14px;
+}
+.icons a {
+    color: black;
+}
+.icons a:hover {
+    color: red;
+}
+.icons img {
+    height: 30px;
+}
+
+/***********Nav**************/
+/*Ngăn không cho thẻ nav trôi lên phần trống của thẻ header bằng thuộc tính clear, thiết lập màu nền và chiều cao cho thẻ nav*/
+nav{
+    clear: both;
+    background-color: #fff;
+    height: 40px;
+}
+.container {
+    float: left;
+}
+/* Menu đa cấp */
+#menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    position: relative;
+}
+#menu li a {
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+#menu ul.sub-menu {
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    width: 200px;
+    display: none;
+    margin-left: 20px;
+    padding: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+#menu li:hover>ul.sub-menu {
+    display: block;
+}
+#menu ul.sub-menu a{
+    padding: 8px 5px;
+    left: 0;
+}
+#menu ul.sub-menu li:hover>a {
+    border-bottom: 1px solid #474644;
+}
+#menu ul.sub-menu li:last-child a {
+    border: none;
+}
+#menu ul.sub-menu ul.sub-menu {
+    margin-left: 1px;
+    left: 199px;
+    top: -0.5px;
+}
+#menu li ul li a:hover {
+    background-color: #f4a261;
+}
+
+/*****************map***************/
+.map {
+    float: right;
+}
+.map div {
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    padding-right: 20px;
+}
+.map a {
+    padding: 15px 15px 10px 0px;
+    color: black;
+}
+.map a:hover{
+    color: red;
+}
+.map img {
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+.map img:hover {
+    color: red;
+}
+
+
+/***************body***************/
+/*Định dạng phần Body*/
+div#body {
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #edeaea;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/*Quy định độ rộng và vùng hiển thị cho các thẻ aside và thẻ section*/
+article{
+    display: table-row;
+}
+
+aside#left, aside#right, section {
+    display: table-cell;
+    vertical-align: top;
+}
+
+aside#left{
+    width: 240px;
+}
+
+section{
+    width: 750px;
+    padding: 0px 8px;
+}
+
+aside#right{
+    width: 200px;
+}
+
+
+/*Khung, bo góc cho khối div*/
+aside#left>div{
+    border: 1px solid #206AB5;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/*Màu nền, bo hai góc trên, canh lề, cỡ chữ, màu chữ,...*/
+aside#left>div>p{
+    background-color: #206AB5;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    height: 25px;
+    padding-top: 5px;
+}
+
+aside#left>div>ul{
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+aside#left>div>ul>li{
+    height: 25px;
+    list-style-position: inside;
+    list-style-image: url(/Images/dot.png);
+    padding-left: 5px;
+}
+
+aside#left>div>ul>li a {
+    color: #206AB5;
+    text-decoration: none;
+}
+
+aside#left>div>ul>li a:hover{
+    color: #ff0000;
+}
+
+/*Thiết lập định dạng cho các khối div trong thẻ <aside id="right">*/
+aside#right>div{
+    border: 1px solid #206AB5;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+aside#right>div>p{
+    background-color: #206AB5;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    height: 25px;
+    padding-top: 5px;
+}
+
+/*Ngăn không cho nội dung trong p bị trôi lên (vì trong p có thẻ
+img có dùng thuộc tính float để chuyển hình sang trái*/
+aside#right>div#sachbannhieu p {
+    clear: both;
+}
+
+aside#right>div#sachbannhieu img{
+    width: 40px;
+    height: 50px;
+    padding-left: 5px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+aside#right>div#sachbannhieu a{
+    text-decoration: none;
+    font-size: 9pt;
+    font-family: Arial;
+    color: #456c26;
+    height: 70px;
+}
+
+aside#right>div#sachbannhieu a:hover{
+    font-weight: bold;
+}
+
+/*Định dạng cho thẻ select ở phần liên kết website*/
+aside#right>div#lienketwebsite select{
+    margin: 10px;
+    width: 170px;
+    height: 30px;
+    border-radius: 3px;
+    border: #808080 solid 1px;
+    text-align: center;
+}
+
+aside#right>div#thongketruycap{
+    background-color: #e3ecf3;
+}
+
+aside#right>div#thongketruycap h4 {
+    margin: 10px;
+    color: red;
+}
+
+/*Thêm các định dạng CSS vào file Style.css (đã tạo ở Chương 2) để định dạng cho
+phần calendar:*/
+.calendar {
+    border:1px solid #f4a261;
+    border-radius:4px;
+    margin-bottom:10px;
+}
+
+.calendar table {
+   width:100%;
+}
+
+.calendar table tr td.monthyear {
+   background-color:#F60; 
+   text-align:center; 
+   font-size:16px; 
+   font-weight:bold;
+   color:#FFF; 
+   border:1px solid#666;
+}
+
+.calendar table tr.weektitle td { 
+    text-align:center;
+    font-weight:bold;
+    border:1px solid #666; 
+    background-color:#CCF;
+}
+
+.calendar table tr td.weekday {
+   text-align:center; 
+   border:1px solid #666;
+}
+
+section>p{
+    /*Định dạng nền chuyển màu cho thẻ p*/
+    background: linear-gradient(#a5b4c4, #206AB5, #206AB5);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    height: 25px;
+    padding-top: 5px;
+}
+
+.sach{
+    width: 240px;
+    height: 320px;
+    background-color: #c7e5f2;
+    margin: 3px;
+    border-radius: 5px;
+    border: 1px dashed #79B22F;
+    text-align: center;
+    float: left;
+}
+
+.tensach {
+    margin-top:10px;
+    vertical-align: top;
+    height: 40px;
+}
+
+.tensach a{
+    font-weight: bold;
+    color: black;
+    font-size:14px;
+}
+
+.tensach a:hover{
+    font-style: italic;
+}
+
+.hinhsach{
+    margin-top:15px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 150px;
+    height: 200px;
+    /*Các thuộc tính dùng để tạo hiệu ứng transform*/
+    transform: all 0.5s ease;
+}
+
+/*Tăng kích thước hình lên 1.1 khi rê chuột vào*/
+.hinhsach:hover{
+    transform: scale(1.1);
+}
+
+.dongia{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.gia{
+    color: red;
+    font-weight: bold;
+}
+
+.nutchomua {
+    margin: 7px 0px;
+    height: 30px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px
+}
+.footer a {
+    color: black;
+}
+.footer a:hover {
+    color: red;
+}
+.footer .social {
+    text-align: center;
+    font-size: 20px;
+}
+.footer .social img {
+    height: 30px;
+}

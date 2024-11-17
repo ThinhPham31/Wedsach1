@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e3e3;
+}
+
+/* Header */
+header {
+    background-color: #f4a261;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+#logo {
+    padding: 5px 0px;
+}
+#logo img {
+    height: 190px;
+    margin: 10px 40px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 50%;
+}
+.search-bar img {
+    height: 30px;
+}
+input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.search-bar button {
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    gap: 15px;
+}
+.icons div {
+    text-align: center;
+    font-size: 14px;
+}
+.icons a {
+    color: black;
+}
+.icons a:hover {
+    color: red;
+}
+.icons img {
+    height: 30px;
+}
+
+/* Nav*/
+
+/*Ngăn không cho thẻ nav trôi lên phần trống của thẻ header bằng thuộc tính clear, thiết lập màu nền và chiều cao cho thẻ nav*/
+nav{
+    clear: both;
+    background-color: #fff;
+    height: 40px;
+}
+.container {
+    float: left;
+}
+/* Menu container */
+#menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    position: relative;
+}
+#menu li a {
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+#menu ul.sub-menu {
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    width: 200px;
+    display: none;
+    margin-left: 20px;
+    padding: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+#menu li:hover>ul.sub-menu {
+    display: block;
+}
+#menu ul.sub-menu a{
+    padding: 8px 5px;
+    left: 0;
+}
+#menu ul.sub-menu li:hover>a {
+    border-bottom: 1px solid #474644;
+}
+#menu ul.sub-menu li:last-child a {
+    border: none;
+}
+#menu ul.sub-menu ul.sub-menu {
+    margin-left: 1px;
+    left: 199px;
+    top: -1px;
+}
+#menu li ul li a:hover {
+    background-color: #f4a261;
+}
+/*map*/
+.map {
+    float: right;
+}
+.map div {
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    padding-right: 20px;
+}
+.map a {
+    padding: 15px 15px 10px 0px;
+    color: black;
+}
+.map a:hover{
+    color: red;
+}
+.map img {
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+.map img:hover {
+    color: red;
+}
+
+#body {
+    width: 1700px;
+    height: 700px;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 1px solid rgb(148, 147, 147);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px
+}
+.footer .social {
+    text-align: center;
+    font-size: 20px;
+}
+.footer .social img {
+    height: 30px;
+}
+.footer a {
+    color: black;
+}
+.footer a:hover {
+    color: red;
+}
+
+/********************************Dangnhap********************************/
+/* Dia diem */
+.content {
+    padding: 90px 150px;
+}
+#diadiem {
+    width: 1700px;
+    height: 700px;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 1px solid rgb(148, 147, 147);
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+.ggmap {
+    width: 850px;
+}
+.ggmap iframe {
+    margin: 25px;
+}
+.ggmap div {
+    display: flex;
+}
+.content {
+    margin: 0;
+}
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    float: right;
+    margin: 25px;
+    margin-top: 100px;
+    width: 300px;
+    height: 200px;
+}
+.info .icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 25px;
+}
+.info .icon img {
+    width: 20px;
+    height: 20px;
+}
+.info .text {
+    line-height: 1.5;
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
